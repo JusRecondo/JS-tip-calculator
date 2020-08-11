@@ -1,0 +1,14 @@
+body{  
+  background-image: url('https://cache.desktopnexus.com/cropped-wallpapers/1551/1551492-1366x768-[DesktopNexus.com].jpg?st=xm4EWK6MGVLYPtNhverR8w&e=1585811098');
+}
+
+#calculator {
+  background-color: rgba(193, 66, 66, 0.45);
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 30px;
+  width: 50%;
+  display: inline-block;
+  font-family: 'Gotu', sans-serif;
+  color: white;
+}
