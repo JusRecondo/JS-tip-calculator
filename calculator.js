@@ -1,11 +1,11 @@
-document.getElementById('calculator').onchange = function() {
-  var bill = Number(document.getElementById('billTotal').value);
-  var tipPercent = document.getElementById('tipInput').value;
-  var split = document.getElementById('splitInput').value;
-  var billEach = bill / split;
-  var tipValue = bill * (tipPercent/100);
-  var newBillEach = (bill + tipValue) / split;
-  var tipAmountEach = tipValue / split;
+document.getElementById('calculator').addEventListener('change', function() {
+  let bill = Number(document.getElementById('billTotal').value);
+  let tipPercent = document.getElementById('tipInput').value;
+  let split = document.getElementById('splitInput').value;
+  let billEach = bill / split;
+  let tipValue = bill * (tipPercent/100);
+  let newBillEach = (bill + tipValue) / split;
+  let tipAmountEach = tipValue / split;
 
   document.getElementById('billEach').innerHTML = billEach.toFixed(2);
   document.getElementById('tipOutput').innerHTML = tipPercent + "%";
@@ -14,4 +14,4 @@ document.getElementById('calculator').onchange = function() {
   document.getElementById('tipAmount').innerHTML = "$" + tipAmountEach.toFixed(2);
 
 
-}
+} );
